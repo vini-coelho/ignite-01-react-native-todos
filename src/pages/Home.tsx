@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Alert, StyleSheet, View } from 'react-native';
 
 import { Header } from '../components/Header';
-import { Task, TasksList } from '../components/TasksList';
+import { TasksList } from '../components/TasksList';
+import { Task } from '../components/TaskItem';
 import { TodoInput } from '../components/TodoInput';
 
 export function Home() {
@@ -51,6 +52,14 @@ export function Home() {
         }
       ]
     );
+  }
+
+  function handleEditTask(id: number, taskNewTitle: string) {
+    const updatedTasks = tasks.map(task => 
+      task.id === id ? {...task, title: taskNewTitle} : task 
+    );
+
+    setTasks(updatedTasks);
   }
 
   return (
