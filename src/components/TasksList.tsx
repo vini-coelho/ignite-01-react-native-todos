@@ -21,7 +21,6 @@ export function TasksList({ tasks, toggleTaskDone, removeTask, editTask }: Tasks
       showsVerticalScrollIndicator={false}
       renderItem={({ item, index }) => {
         return (
-          <ItemWrapper index={index}>
             <TaskItem
               index={index}
               item={item}
@@ -29,7 +28,6 @@ export function TasksList({ tasks, toggleTaskDone, removeTask, editTask }: Tasks
               removeTask={removeTask}
               editTask={editTask}
             />
-          </ItemWrapper>
         )
       }}
       style={{
