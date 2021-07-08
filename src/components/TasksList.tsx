@@ -1,5 +1,5 @@
 import React from 'react';
-import { FlatList, Image, TouchableOpacity, View, Text, StyleSheet, FlatListProps } from 'react-native';
+import { FlatList } from 'react-native';
 
 import { ItemWrapper } from './ItemWrapper';
 
