@@ -21,6 +21,7 @@ interface Props {
   index: number;
   toggleTaskDone: (id: number) => void;
   removeTask: (id: number) => void;
+  editTask: (id: number, taskNewTitle: string) => void;
 }
 
 export function TaskItem({ index, item, toggleTaskDone, removeTask }: Props) {
