@@ -25,10 +25,10 @@ To clone and run this application, you'll need [Git](https://git-scm.com), [Node
 
 ```bash
 # Clone this repository
-$ git clone git@github.com:vini-coelho/ignite-01-react-native-todos.git
+$ git clone git@github.com:vini-coelho/ignite-react-native-todo.git
 
 # Go into the repository
-$ cd ignite-01-react-native-todos
+$ cd ignite-react-native-todo
 
 # Install dependencies
 $ yarn install
